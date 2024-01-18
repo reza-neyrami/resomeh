@@ -23,12 +23,11 @@ func NewAuthController(authServices authservice.AuthService) *AuthController {
 func (c *AuthController) LoginPhone(ctx *gin.Context) {
 	var req request.LoginPhoneRequest
 
-	// این خط درخواست JSON را به ساختار 'request' متصل می‌کند
 	if err := ctx.ShouldBindJSON(&req); err != nil {
 		ctx.JSON(http.StatusBadRequest, gin.H{"error": err.Error()})
 		return
 	}
-	// حالا شما می‌توانید از 'request' استفاده کنید
+	
 	username := req.Username
 	authRepo, err := c.authServices.GetAuthRepository(username)
 	if err != nil {
