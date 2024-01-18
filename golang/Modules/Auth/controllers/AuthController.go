@@ -72,35 +72,4 @@ func (c *AuthController) VerifyCode(ctx *gin.Context) {
 
 }
 
-// func (c *AuthController) Registeration(request *AuthUserRegisterRequest) map[string]interface{} {
-// 	username := request.Username
-// 	authRepo, _ := c.authServices.GetAuthRepository(username)
-// 	response, _ := authRepo.Register(request)
-// 	if response["user"] != nil {
-// 		user := response["user"].(User)
-// 		token, _ := user.CreateToken("Register")
-// 		return map[string]interface{}{
-// 			"message":      response["message"],
-// 			"auth":         user,
-// 			"access_token": token,
-// 			"login":        true,
-// 		}
-// 	}
-// 	return response
-// }
 
-// func (c *AuthController) Logout(request *Request) (map[string]interface{}, int) {
-// 	request.User.Token.Revoke()
-// 	return map[string]interface{}{"message": "logout is SuccessFully"}, 200
-// }
-
-// func (c *AuthController) UploadImagesLogin(request *UploadImageRequstHome) (map[string]interface{}, int) {
-// 	log.Println("Public path: " + publicPath())
-// 	bannerName := time.Now().Format("2006-01/02") + "/" + "_Banner"
-// 	banner := request.File["banner"]
-// 	url, _ := storage.Disk("banners").Put(bannerName, banner)
-// 	return map[string]interface{}{
-// 		"message": "اپلود بنر با موفقیت انجام شد",
-// 		"banner":  "/api/banners/" + url,
-// 	}, 200
-// }
