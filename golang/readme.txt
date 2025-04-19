@@ -1,8 +1,1 @@
-این بخشی از کانفیگ دیتابیس افزودنش به پایگاه داده postgreSQl میباشد و بر اساس نیاز میتونید هر دیتابیس دیگه رو بهش کانفیگ کنید
-بخشی جداول رو به دیتابیس اضافه میکنه از gorm  استفاده شده و بخش دیگه  از پکیج SQLx
-برای کوئری ها اضاف شده 
-بخش ریکوئست ها هست ساختار بندی شده  همنیطور نمونه ای از کد سرویس داینامیک بر اساس نام کاربری
-یک جاب ورکر نوشتم که جاب ها رو درون یک استخر جاب از کانال ها بر 
-اساس تعداد هندلر اجرا میکنه خروجی من با 2000 درخواست رو در کمتر یک ثانیه انجام داد
-و یک بخش  auth اضافه کردم که به صورت ماژولار هست  و سرویس رو بر اساس نام کاربری که با ریجیکس نوشته شده میگیره و سرویس رو به صورت داینامیک 
-ست میکنه و همینطور ریپازیتوری مربوطه
+This is part of the database configuration, adding it to the postgreSQL database, and you can configure any other database to it based on your needs. Part of it adds tables to the database. Gorm is used, and the other part is from the SQLx package. The requests section is structured like this. Here is an example of a dynamic service code based on the username. I wrote a job worker that executes jobs in a job pool from channels based on the number of handlers. My output with 2000 requests was done in less than a second. And I added an auth section that is modular and gets the service based on the username written with regex and sets the service dynamically, as well as the relevant repository.
