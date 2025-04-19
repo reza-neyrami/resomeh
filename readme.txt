@@ -1,3 +1,3 @@
-در اینجا نمونه هایی از فعالیت هایی که انجام دادم رو جهت  سطح کاری قرار خواهم داد
+Here I will put examples of the activities I did for the work surface
 
-درون هر فولدر بخش توضیحاتش رو قرار خواهم داد
+Inside each folder I will put its description section
